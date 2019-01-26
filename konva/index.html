@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Infinite notes</title>
+	<style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F0F0F0;
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+	#info {
+		position: fixed;
+		top:1em;
+		left:1em;
+		z-index: 2;
+		pointer-events: none;
+	}
+	#info span {
+		display: block;
+	}
+  </style>
+</head>
+<body>
+	<div id="status"></div><div id="list"></div><div id="drop"></div>
+	<div id="info">
+		<span id="coord"></span>
+		<span id="scale"></span>
+		<span id="stage"></span>
+	</div>
+	<div id="container"></div>
+	<script src="konva.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
